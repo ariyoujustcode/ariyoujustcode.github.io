@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ari Marine - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Ari Marine, and I'm a front-end developer.">
+    <script src="https://kit.fontawesome.com/91d4b32823.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+
+
+      <!----- NAV-MENU-OVERLAY ----->
+      <div id="myNavOver" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="#about"  onclick="closeNav()">About</a>
+          <a href="#contact"  onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+
+
+      <!-- MAIN + HERO-IMAGE -->
+      <main id="home">
+        <div class="hero-image">
+          <!-- NAVIGATION -->
+          <header>
+            <div class="logo">
+              <a id="logo-symbol" href="#home">
+                <img src="images/icons8-big-eats-small-90.png" id="big-eats" alt="fish is eating another fish">
+              </a>
+              <a id="logo-name" href="#home">Ari Marine</a>
+            </div>
+            <ul class="nav-list" id="navlinks">
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0)" onclick="openNav()" class="menu-anchor-class" id="navlinks">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </header>
+          <div class="hero">
+            <h1>Web Developer</h1>
+          </div>
+            <h2>Projects</h2>
+
+        <!-- COLLAPSIBLE PROJECTS -->
+          <section class="section-one">
+            <button type="button" class="collapsible">Gambill's Barber Shop</button>
+            <div class="content">
+              <a href="https://gambills-barber-shop.ariyoujustcode.repl.co/" target="_blank" id="barber-a"><img id="barber" src="images/Gambill's Family.png" alt="barber shop logo"></a>
+              <a href="https://gambills-barber-shop.ariyoujustcode.repl.co/" target="_blank" id="barber-link">Gambill's Barber Shop</a>
+            </div>
+            <button type="button" class="collapsible">NF Real Music</button>
+            <div class="content">
+              <a href="https://nfrealmusic.ariyoujustcode.repl.co/" target="_blank" id="nf-a"><img  id="nf" src="images/NF-Favicon.jpg" alt="nf logo"></a>
+              <a href="https://nfrealmusic.ariyoujustcode.repl.co/" target="_blank" id="nf-link">NF Real Music</a>
+            </div>
+            <button type="button" class="collapsible">Wescom Inc.</button>
+            <div class="content">
+              <a href="https://wescominc.ariyoujustcode.repl.co/" target="_blank" id="wescom-a"><img id="wescom" src="images/wescom-logo.png" alt="wescom logo"></a>
+              <a href="https://wescominc.ariyoujustcode.repl.co/" target="_blank" id="wescom-link">Wescom Inc.</a>
+            </div>
+          
+          </section>
+        </div>
+
+
+        <!----- PORTFOLIO ----->
+        <div class="portfolio" id="portfolio">
+          <h3>Portfolio</h3>
+          <div class="port-flex">
+            <div class="barber">
+              <a href="https://gambills-barber-shop.ariyoujustcode.repl.co/" target="_blank"><img id="barber-port" src="images/Gambill's Family.png" alt="barber shop logo"></a>
+              <a href="https://gambills-barber-shop.ariyoujustcode.repl.co/" target="_blank">Gambill's Barber Shop</a>
+            </div>
+            <div class="nf">
+              <a href="https://nfrealmusic.ariyoujustcode.repl.co/" target="_blank"><img  id="nf-port" src="images/NF-Favicon.jpg" alt="nf logo"></a>
+              <a href="https://nfrealmusic.ariyoujustcode.repl.co/" target="_blank">NF Real Music</a>
+            </div>
+            <div class="wescom">
+              <a href="https://wescominc.ariyoujustcode.repl.co/" target="_blank" id="wescom-anchor-port"><img id="wescom-port" src="images/wescom-logo.png" alt="wescom logo"></a>
+              <a href="https://wescominc.ariyoujustcode.repl.co/" target="_blank">Wescom Inc.</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!----- ABOUT ----->
+        <div class="about" id="about">
+          <h4>About</h4>
+          <p>My name is Ari Marine and I am a Front-End Web Developer. I build websites using HTML, CSS and JavaScript. Additionally, I have experience using React.js and Python.</p>
+          <div class="CV">
+            <img src="images/Ari-Marine-Front-End-Developer-CV-Image.PNG" alt="CV" id="CV">
+            <a href="images/Ari-Marine-Front-End-Developer-CV-Image.PNG" target="_blank">Curriculum Vitae</a>
+          </div>
+        </div>
+
+        <!----- CONTACT/FOOTER ----->
+        <div class="contact" id="contact">
+          <h5>Contact</h5>
+          <a href="mailto:arimarine23@gmail.com" id="email">arimarine23@gmail.com</a>
+          <p>&copy 2022 ARI MARINE</p>
+        </div>
+
+        <!------ SCROLL TOP BUTTON ------>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">TOP</button>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

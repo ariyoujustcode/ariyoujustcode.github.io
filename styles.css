@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #02a4a9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  height: 100vh;
+  background-image: url("images/underwater-hero-image.jpg");
+  background-repeat: no-repeat;
+  background-color: #f0f0ee;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#barber {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #02a4a9;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+#barber:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+#barber-link {
+  color: #02a4a9;
+  font-size: 1.8rem;
+  opacity: .8;
+  display: block;
+  width: 200px;
+  margin: .5rem auto;
+}
+
+#barber-a {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#barber-link:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+#nf {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #02a4a9;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+#nf-link {
+  color: #02a4a9;
+  font-size: 1.8rem;
+  opacity: .8;
+  display: block;
+  width: 150px;
+  margin: .5rem auto;
+}
+
+#nf-a {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#nf:hover, #nf-link:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+#wescom {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 2px solid #02a4a9;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+#wescom:hover, #wescom-link:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+#wescom-link {
+  color: #02a4a9;
+  font-size: 1.8rem;
+  opacity: .8;
+  display: block;
+  width: 150px;
+  margin: .5rem auto;
+}
+
+#wescom-a {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* ----- NAVIGATION ----- */
+header {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 .5rem;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+  background-color: #01070b;
+  border-radius: 50px;
+  opacity: .8;
+  padding: .5rem 1.5rem;
+}
+
+.nav-list li:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav-list li a {
+  color: #f0f0ee;
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* ----- LOGO ----- */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-symbol {
+  display: block;
+  margin: 1rem 1.5rem;
+}
+
+#logo-name:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#logo-name {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f0f0ee;
+  background-color: #01070b;
+  opacity: .8;
+  padding: .5rem 1.5rem;
+  border-radius: 50px;
+  margin: .5rem;
+}
+
+/* ----- PORTFOLIO SECTION ----- */
+.portfolio {
+  background-color: #01070b;
+  color: #02a4a9;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.port-flex {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#barber-port, #nf-port, #wescom-port {
+  width: 200px;
+  border: 2px solid #02a4a9;
+  display: block;
+  margin: 0 auto;
+}
+
+#wescom-port {
+  border: none;
+  padding-top: 80px;
+}
+
+.barber, .nf, .wescom {
+  text-align: center;
+  display: block;
+  margin: 2rem;
+}
+
+#wescom-anchor-port {
+  height: 200px;
+  border: 2px solid #02a4a9;
+}
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 1rem;
+  padding-top: 80px;
+}
+
+.portfolio a {
+  color: #02a4a9;
+  margin: 1rem;
+  display: block;
+  font-size: 2rem;
+}
+
+
+/* ----- ABOUT SECTION ----- */
+.about {
+  background-color: #02a4a9;
+  color: #01070b;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#CV {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #01070b;
+}
+
+.about p {
+  font-size: 1.6rem;
+  color: #01070b;
+  width: 350px;
+  text-align: center;
+  margin: .5rem auto;
+}
+
+.about a {
+  font-size: 1.4rem;
+  color:#01070b;
+  text-align: center;
+  display: block;
+  margin-top: .5rem;
+}
+
+/* ----- CONTACT / FOOTER ----- */
+.contact {
+  background-color: #01070b;
+  color: #f0f0ee;
+  width: 100%;
+  text-align: center;
+}
+
+h5 {
+  font-size: 4rem;
+  margin: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.contact a {
+  color: #02a4a9;
+  text-decoration: none;
+  font-size: 2.4rem;
+  display: block;
+}
+
+#email {
+  font-weight: 700;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+
+#email:hover {
+  color: #f0f0ee;
+}
+
+.contact p {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+
+#big-eats {
+  opacity: .8;
+  display: block;
+}
+
+#big-eats:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.hero {
+  color: #02a4a9;
+  opacity: .8rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  background-color: #01070b;
+  padding: .5rem 1rem;
+  max-width: 435px;
+  margin: 0 auto;
+  border-radius: 50px;
+  opacity: .8;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  background-color: #01070b;
+  color: #02a4a9;
+  opacity: .8;
+  max-width: 150px;
+  border-radius: 50px;
+  margin: 2rem auto;
+  padding: .5rem 1.5rem;
+}
+
+.collapsible {
+  background-color: #01070b;
+  color: #f0f0ee;
+  cursor: pointer;
+  width: 240px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1.8rem;
+  opacity: .8;
+  border-radius: 50px;
+  margin: .75rem;
+  padding: .5rem 1.5rem;
+}
+
+.content {
+  padding: 1rem;
+  display: none;
+  overflow: hidden;
+  background-color: #01070b;
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: .8;
+  border-radius: 20px;
+}
+
+
+.collapsible:before {
+  content: '\002B'; 
+  font-size: 1.8rem;
+  font-weight: 700;
+  color:#02a4a9;
+  float: left;
+  margin-right: .5rem;
+  border-radius: 5px;
+}
+
+.active:before {
+  content: "\2212"; 
+}
+
+.collapsible:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.section-one {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-solid {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-bars {
+  display: block;
+  color:#f0f0ee;
+  background-color: #01070b;
+  opacity: .8;
+  border-radius: 50px;
+  padding: .5rem 1.5rem;
+  font-size: 2.4rem;
+}
+
+.fa-bars:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav-list i {
+  display: none;
+}
+
+.menu-anchor-class {
+  display: none;
+}
+
+
+/* ----- TOP BUTTON ----- */
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 0; 
+  right: 0; 
+  z-index: 99; 
+  border: 2px solid #02a4a9; 
+  outline: none; 
+  background-color: #01070b; 
+  opacity: .8;
+  color: #f0f0ee; 
+  cursor: pointer; 
+  padding: 1rem; 
+  margin: 1rem;
+  border-radius: 25px; 
+  font-size: 1.8rem;
+}
+
+#topBtn:hover {
+  opacity: 1;
+}
+/* ----- HIDE RESPONSIVE NAV-OVERLAY BY DEFAULT ----- */
+.overlay {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-anchor-class {
+    display: block;
+  }
+
+  .nav-list a {
+    display: block;
+  }
+
+  #logo-symbol {
+    margin-left: .5rem;
+  }
+  
+  #barber-port, #nf-port, #wescom-port {
+    width: 150px;
+  }
+
+  #wescom-port {
+    border: none;
+    padding-top: 55px;
+  }
+
+  .portfolio a {
+    font-size: 1.4rem;
+  }
+
+  #wescom-anchor-port {
+    height: 150px;
+  }
+
+  /* ----- RESPONSIVE NAVIGATION ----- */
+  .overlay {
+    display: block;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color:#01070b;
+    opacity: .9;
+    overflow-y: hidden;
+    transition: .8s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 20%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 10px; 
+  }
+
+  .overlay a {
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 4.8rem;
+    color: #f0f0ee;
+    display: block; 
+    transition: 0.3s; 
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #02a4a9;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4.8rem;
+    margin: 1rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    max-width: 300px;
+  }
+
+  h4 {
+    padding-top: 1rem;
+  }
+
+  #CV {
+    width: 270px;
+    margin-top: .25rem;
+  }
+
+  .about p {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .port-flex {
+    flex-direction: column;
+  }
+
+  .port-flex .barber, .port-flex .nf, .port-flex .wescom {
+    margin: 0 auto;
+  }
+
+  h3 {
+    padding-top: 10px;
+    font-size: 3rem;
+    margin: .5rem;
+  }
+
+  #wescom-anchor-port {
+    height: 28px;
+  }
+
+  #wescom-port {
+    padding-top: 0;
+  }
+
+  .portfolio {
+    padding: .5rem;
+  }
+  
+
+}
+@media screen and (max-width: 425px) {
+  #big-eats {
+    width: 60px;
+  }
+
+  #logo-name {
+    font-size: 2rem;
+  }
+
+  .overlay a {
+    font-size: 4rem;
+  }
+
+  .overlay .closebtn {
+    font-size: 4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #email {
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  #CV {
+    width: 400px;
+  }
+
+  #email {
+    font-size: 4rem;
+  }
+
+  header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    padding-top: 170px;
+  }
+
+  #topBtn {
+    right: 25%;
+  }
+
+  h4 {
+    padding-top: 3rem;
+  }
+
+}
